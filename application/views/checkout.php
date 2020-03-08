@@ -17,7 +17,10 @@
     </link>
 
     <style>
-        /* ========================= */
+        body {
+            margin-top: 50px
+        }
+
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
