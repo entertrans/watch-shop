@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 
-<html lang="en">
+<html lang="en" id="home">
 
 <head>
   <meta charset="utf-8">
@@ -55,8 +55,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#product">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#testimonial">Testimonial</a>
           </li>
         </ul>
         <ul class="navbar-nav" style="padding-right: 50px">
@@ -128,343 +137,349 @@
     <!-- container -->
     <div class="container">
       <!-- Our Service -->
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="text-center">Our Sevice</h1>
-          <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At expedita itaque officiis voluptatum. In
-            libero, eaque nulla a unde ipsum eum, nostrum omnis rem doloremque beatae suscipit sint sed
-            voluptatibus.</i>
-          <br><br>
-        </div>
+      <section class="service" id="service">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Sevice</h1>
+            <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At expedita itaque officiis voluptatum. In
+              libero, eaque nulla a unde ipsum eum, nostrum omnis rem doloremque beatae suscipit sint sed
+              voluptatibus.</i>
+            <br><br>
+          </div>
 
-        <div class="col-md-4 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quo necessitatibus pariatur deleniti tempore
-          eius. Sit, itaque ad culpa, eum beatae quas enim tempore laudantium at consequatur exercitationem quibusdam
-          voluptas.
+          <div class="col-md-4 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quo necessitatibus pariatur deleniti tempore
+            eius. Sit, itaque ad culpa, eum beatae quas enim tempore laudantium at consequatur exercitationem quibusdam
+            voluptas.
+          </div>
+          <div class="col-md-4 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quo necessitatibus pariatur deleniti tempore
+            eius. Sit, itaque ad culpa, eum beatae quas enim tempore laudantium at consequatur exercitationem quibusdam
+            voluptas.
+          </div>
+          <div class="col-md-4 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quo necessitatibus pariatur deleniti tempore
+            eius. Sit, itaque ad culpa, eum beatae quas enim tempore laudantium at consequatur exercitationem quibusdam
+            voluptas.
+          </div>
         </div>
-        <div class="col-md-4 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quo necessitatibus pariatur deleniti tempore
-          eius. Sit, itaque ad culpa, eum beatae quas enim tempore laudantium at consequatur exercitationem quibusdam
-          voluptas.
-        </div>
-        <div class="col-md-4 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quo necessitatibus pariatur deleniti tempore
-          eius. Sit, itaque ad culpa, eum beatae quas enim tempore laudantium at consequatur exercitationem quibusdam
-          voluptas.
-        </div>
-      </div>
+      </section>
       <!-- /.row -->
       <!-- End of Our Service -->
 
       <hr class="featurette-divider">
 
       <!-- Products -->
-      <div class="row">
-        <div class="col-md-12 mb-4">
-          <h1 class="text-center">Products</h1>
-          <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At expedita itaque officiis voluptatum. In
-            libero, eaque nulla a unde ipsum eum, nostrum omnis rem doloremque beatae suscipit sint sed
-            voluptatibus.</i>
-        </div>
+      <section class="product" id="product">
+        <div class="row">
+          <div class="col-md-12 mb-4">
+            <h1 class="text-center">Products</h1>
+            <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At expedita itaque officiis voluptatum. In
+              libero, eaque nulla a unde ipsum eum, nostrum omnis rem doloremque beatae suscipit sint sed
+              voluptatibus.</i>
+          </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url('assets/img/product/01-thumbnail.jpg') ?>" />
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Item One</a>
-              </h4>
-              <h5>$24.99</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Amet numquam aspernatur!
-              </p>
-              <button class="btn btn-primary">Add to Cart</button>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="<?= base_url('assets/img/product/01-thumbnail.jpg') ?>" />
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item One</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Amet numquam aspernatur!
+                </p>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url('assets/img/product/02-thumbnail.jpg') ?>" />
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Item One</a>
-              </h4>
-              <h5>$24.99</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Amet numquam aspernatur!
-              </p>
-              <button class="btn btn-primary">Add to Cart</button>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="<?= base_url('assets/img/product/02-thumbnail.jpg') ?>" />
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item One</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Amet numquam aspernatur!
+                </p>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url('assets/img/product/03-thumbnail.jpg') ?>" />
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Item One</a>
-              </h4>
-              <h5>$24.99</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Amet numquam aspernatur!
-              </p>
-              <button class="btn btn-primary">Add to Cart</button>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="<?= base_url('assets/img/product/03-thumbnail.jpg') ?>" />
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item One</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Amet numquam aspernatur!
+                </p>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url('assets/img/product/04-thumbnail.jpg') ?>" />
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Item One</a>
-              </h4>
-              <h5>$24.99</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Amet numquam aspernatur!
-              </p>
-              <button class="btn btn-primary">Add to Cart</button>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="<?= base_url('assets/img/product/04-thumbnail.jpg') ?>" />
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item One</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Amet numquam aspernatur!
+                </p>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url('assets/img/product/05-thumbnail.jpg') ?>" />
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Item One</a>
-              </h4>
-              <h5>$24.99</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Amet numquam aspernatur!
-              </p>
-              <button class="btn btn-primary">Add to Cart</button>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="<?= base_url('assets/img/product/05-thumbnail.jpg') ?>" />
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item One</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Amet numquam aspernatur!
+                </p>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url('assets/img/product/06-thumbnail.jpg') ?>" />
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Item One</a>
-              </h4>
-              <h5>$24.99</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Amet numquam aspernatur!
-              </p>
-              <button class="btn btn-primary">Add to Cart</button>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="<?= base_url('assets/img/product/06-thumbnail.jpg') ?>" />
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item One</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Amet numquam aspernatur!
+                </p>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-12 text-center">
-          <button class="btn btn-primary">View More</button>
+          <div class="col-md-12 text-center">
+            <button class="btn btn-primary">View More</button>
+          </div>
         </div>
-      </div>
+      </section>
       <!-- /.row -->
       <!-- End of Products -->
 
       <hr class="featurette-divider">
 
       <!-- Testimonial -->
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="text-center">Testimonial</h1>
-          <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At expedita itaque officiis voluptatum. In
-            libero, eaque nulla a unde ipsum eum, nostrum omnis rem doloremque beatae suscipit sint sed
-            voluptatibus.</i>
-          <br><br>
-        </div>
-      </div>
-
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row text-center">
-              <!--Grid column-->
-              <div class="col-md-4 mb-md-0 mb-5">
-                <div class="testimonial">
-                  <!--Avatar-->
-                  <div class="avatar mx-auto">
-                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
-                  </div>
-                  <!--Content-->
-                  <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
-                  <h6 class="font-weight-bold blue-text my-3">Web Designer</h6>
-                  <p class="font-weight-normal dark-grey-text">
-                    <i class="fa fa-fw fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                    eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
-                </div>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-md-4 mb-md-0 mb-5">
-                <div class="testimonial">
-                  <!--Avatar-->
-                  <div class="avatar mx-auto">
-                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1 img-fluid">
-                  </div>
-                  <!--Content-->
-                  <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
-                  <h6 class="font-weight-bold blue-text my-3">Web Developer</h6>
-                  <p class="font-weight-normal dark-grey-text">
-                    <i class="fa fa-fw fa-quote-left pr-2"></i>Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                    corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
-                </div>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-md-4">
-                <div class="testimonial">
-                  <!--Avatar-->
-                  <div class="avatar mx-auto">
-                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
-                  </div>
-                  <!--Content-->
-                  <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>
-                  <h6 class="font-weight-bold blue-text my-3">Photographer</h6>
-                  <p class="font-weight-normal dark-grey-text">
-                    <i class="fa fa-fw fa-quote-left pr-2"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                    blanditiis praesentium voluptatum deleniti atque corrupti.</p>
-                </div>
-              </div>
-              <!--Grid column-->
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row text-center">
-              <!--Grid column-->
-              <div class="col-md-4 mb-md-0 mb-5">
-                <div class="testimonial">
-                  <!--Avatar-->
-                  <div class="avatar mx-auto">
-                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
-                  </div>
-                  <!--Content-->
-                  <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
-                  <h6 class="font-weight-bold blue-text my-3">Web Designer</h6>
-                  <p class="font-weight-normal dark-grey-text">
-                    <i class="fa fa-fw fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                    eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
-                </div>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-md-4 mb-md-0 mb-5">
-                <div class="testimonial">
-                  <!--Avatar-->
-                  <div class="avatar mx-auto">
-                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1 img-fluid">
-                  </div>
-                  <!--Content-->
-                  <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
-                  <h6 class="font-weight-bold blue-text my-3">Web Developer</h6>
-                  <p class="font-weight-normal dark-grey-text">
-                    <i class="fa fa-fw fa-quote-left pr-2"></i>Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                    corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
-                </div>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-md-4">
-                <div class="testimonial">
-                  <!--Avatar-->
-                  <div class="avatar mx-auto">
-                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
-                  </div>
-                  <!--Content-->
-                  <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>
-                  <h6 class="font-weight-bold blue-text my-3">Photographer</h6>
-                  <p class="font-weight-normal dark-grey-text">
-                    <i class="fa fa-fw fa-quote-left pr-2"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                    blanditiis praesentium voluptatum deleniti atque corrupti.</p>
-                </div>
-              </div>
-              <!--Grid column-->
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row text-center">
-              <!--Grid column-->
-              <div class="col-md-4 mb-md-0 mb-5">
-                <div class="testimonial">
-                  <!--Avatar-->
-                  <div class="avatar mx-auto">
-                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
-                  </div>
-                  <!--Content-->
-                  <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
-                  <h6 class="font-weight-bold blue-text my-3">Web Designer</h6>
-                  <p class="font-weight-normal dark-grey-text">
-                    <i class="fa fa-fw fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                    eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
-                </div>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-md-4 mb-md-0 mb-5">
-                <div class="testimonial">
-                  <!--Avatar-->
-                  <div class="avatar mx-auto">
-                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1 img-fluid">
-                  </div>
-                  <!--Content-->
-                  <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
-                  <h6 class="font-weight-bold blue-text my-3">Web Developer</h6>
-                  <p class="font-weight-normal dark-grey-text">
-                    <i class="fa fa-fw fa-quote-left pr-2"></i>Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                    corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
-                </div>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-md-4">
-                <div class="testimonial">
-                  <!--Avatar-->
-                  <div class="avatar mx-auto">
-                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
-                  </div>
-                  <!--Content-->
-                  <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>
-                  <h6 class="font-weight-bold blue-text my-3">Photographer</h6>
-                  <p class="font-weight-normal dark-grey-text">
-                    <i class="fa fa-fw fa-quote-left pr-2"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                    blanditiis praesentium voluptatum deleniti atque corrupti.</p>
-                </div>
-              </div>
-              <!--Grid column-->
-            </div>
+      <section class="testimonial" id="testimonial">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Testimonial</h1>
+            <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At expedita itaque officiis voluptatum. In
+              libero, eaque nulla a unde ipsum eum, nostrum omnis rem doloremque beatae suscipit sint sed
+              voluptatibus.</i>
+            <br><br>
           </div>
         </div>
-        <!-- carousel-inner -->
 
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <i style="color: black" class="fa fa-fw fa-chevron-left"></i>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <i style="color: black" class="fa fa-fw fa-chevron-right"></i>
-        </a>
-      </div>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row text-center">
+                <!--Grid column-->
+                <div class="col-md-4 mb-md-0 mb-5">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
+                    <h6 class="font-weight-bold blue-text my-3">Web Designer</h6>
+                    <p class="font-weight-normal dark-grey-text">
+                      <i class="fa fa-fw fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                      eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
+                  </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4 mb-md-0 mb-5">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1 img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
+                    <h6 class="font-weight-bold blue-text my-3">Web Developer</h6>
+                    <p class="font-weight-normal dark-grey-text">
+                      <i class="fa fa-fw fa-quote-left pr-2"></i>Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                      corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
+                  </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>
+                    <h6 class="font-weight-bold blue-text my-3">Photographer</h6>
+                    <p class="font-weight-normal dark-grey-text">
+                      <i class="fa fa-fw fa-quote-left pr-2"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+                  </div>
+                </div>
+                <!--Grid column-->
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row text-center">
+                <!--Grid column-->
+                <div class="col-md-4 mb-md-0 mb-5">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
+                    <h6 class="font-weight-bold blue-text my-3">Web Designer</h6>
+                    <p class="font-weight-normal dark-grey-text">
+                      <i class="fa fa-fw fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                      eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
+                  </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4 mb-md-0 mb-5">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1 img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
+                    <h6 class="font-weight-bold blue-text my-3">Web Developer</h6>
+                    <p class="font-weight-normal dark-grey-text">
+                      <i class="fa fa-fw fa-quote-left pr-2"></i>Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                      corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
+                  </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>
+                    <h6 class="font-weight-bold blue-text my-3">Photographer</h6>
+                    <p class="font-weight-normal dark-grey-text">
+                      <i class="fa fa-fw fa-quote-left pr-2"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+                  </div>
+                </div>
+                <!--Grid column-->
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row text-center">
+                <!--Grid column-->
+                <div class="col-md-4 mb-md-0 mb-5">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
+                    <h6 class="font-weight-bold blue-text my-3">Web Designer</h6>
+                    <p class="font-weight-normal dark-grey-text">
+                      <i class="fa fa-fw fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                      eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
+                  </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4 mb-md-0 mb-5">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1 img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
+                    <h6 class="font-weight-bold blue-text my-3">Web Developer</h6>
+                    <p class="font-weight-normal dark-grey-text">
+                      <i class="fa fa-fw fa-quote-left pr-2"></i>Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                      corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
+                  </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>
+                    <h6 class="font-weight-bold blue-text my-3">Photographer</h6>
+                    <p class="font-weight-normal dark-grey-text">
+                      <i class="fa fa-fw fa-quote-left pr-2"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+                  </div>
+                </div>
+                <!--Grid column-->
+              </div>
+            </div>
+          </div>
+          <!-- carousel-inner -->
+
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <i style="color: black" class="fa fa-fw fa-chevron-left"></i>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <i style="color: black" class="fa fa-fw fa-chevron-right"></i>
+          </a>
+        </div>
+      </section>
       <!-- End of Testimonial -->
 
       <hr class="featurette-divider">
@@ -488,3 +503,9 @@
 
 <script src="<?= base_url('assets/jquery/jquery.min.js') ?>"></script>
 <script src="<?= base_url('vendor/plugins/bootstrap/js/bootstrap.min.js') ?>"></script>
+
+<script>
+  $('.page-scroll').on('click', function(){
+    console.log($(this).attr('href'));
+  });
+</script>
