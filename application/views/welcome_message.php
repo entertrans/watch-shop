@@ -166,7 +166,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="<?= base_url('assets/img/product/01-thumbnail.jpg') ?>" /></a>
+            <img class="card-img-top" src="<?= base_url('assets/img/product/01-thumbnail.jpg') ?>" />
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Item One</a>
@@ -183,7 +183,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="<?= base_url('assets/img/product/02-thumbnail.jpg') ?>" /></a>
+            <img class="card-img-top" src="<?= base_url('assets/img/product/02-thumbnail.jpg') ?>" />
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Item One</a>
@@ -200,7 +200,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="<?= base_url('assets/img/product/03-thumbnail.jpg') ?>" /></a>
+            <img class="card-img-top" src="<?= base_url('assets/img/product/03-thumbnail.jpg') ?>" />
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Item One</a>
@@ -217,7 +217,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="<?= base_url('assets/img/product/04-thumbnail.jpg') ?>" /></a>
+            <img class="card-img-top" src="<?= base_url('assets/img/product/04-thumbnail.jpg') ?>" />
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Item One</a>
@@ -234,7 +234,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="<?= base_url('assets/img/product/05-thumbnail.jpg') ?>" /></a>
+            <img class="card-img-top" src="<?= base_url('assets/img/product/05-thumbnail.jpg') ?>" />
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Item One</a>
@@ -251,7 +251,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="<?= base_url('assets/img/product/06-thumbnail.jpg') ?>" /></a>
+            <img class="card-img-top" src="<?= base_url('assets/img/product/06-thumbnail.jpg') ?>" />
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Item One</a>
@@ -267,7 +267,7 @@
         </div>
 
         <div class="col-md-12 text-center">
-          <button class="btn btn-primary"><i class="fa fa-fw fa-refresh"></i> Load More</button>
+          <button class="btn btn-primary">View More</button>
         </div>
       </div>
       <!-- /.row -->
