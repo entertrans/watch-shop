@@ -11,7 +11,7 @@
   <title>Carousel Template · Bootstrap</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="<?= base_url('vendor/plugins/bootstrap/css/bootstrap.min.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('assets/vendor/bootstrap-4.4.1/css/bootstrap.min.css') ?>">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?= base_url('assets/fonts/font-awesome/css/font-awesome.min.css') ?>">
   </link>
@@ -502,7 +502,7 @@
 </html>
 
 <script src="<?= base_url('assets/jquery/jquery.min.js') ?>"></script>
-<script src="<?= base_url('vendor/plugins/bootstrap/js/bootstrap.min.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/bootstrap-4.4.1/js/bootstrap.min.js') ?>"></script>
 
 <script>
   $('.page-scroll').on('click', function(){
