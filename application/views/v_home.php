@@ -58,7 +58,7 @@
 <!-- container -->
 <div class="container">
     <!-- Our Service -->
-    <section class="service" id="service">
+    <section class="service">
         <div class="row">
             <div class="col-md-12">
                 <h1 class="text-center">Sevice</h1>
@@ -91,7 +91,7 @@
     <hr class="featurette-divider">
 
     <!-- Products -->
-    <section class="product" id="product">
+    <section class="product">
         <div class="row">
             <div class="col-md-12 mb-4">
                 <h1 class="text-center">Products</h1>
@@ -213,7 +213,7 @@
     <hr class="featurette-divider">
 
     <!-- Testimonial -->
-    <section class="testimonial" id="testimonial">
+    <section class="testimonial">
         <div class="row">
             <div class="col-md-12">
                 <h1 class="text-center">Testimonial</h1>
@@ -411,9 +411,3 @@
 <!-- /.container -->
 
 <?php $this->load->view('layout/footer'); ?>
-
-<script>
-    $('.page-scroll').on('click', function() {
-        console.log($(this).attr('href'));
-    });
-</script>

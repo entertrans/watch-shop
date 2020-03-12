@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 
-<html lang="en" id="home">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -50,28 +50,19 @@
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="<?= site_url('welcome') ?>">Whatch'out</a>
+            <a class="navbar-brand" href="<?= site_url('home') ?>">Whatch'out</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#service">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#product">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#testimonial">Testimonial</a>
+                        <a class="nav-link <?= $this->uri->segment('1') == 'home' ? 'active' : '' ?>" href="<?= site_url('home') ?>">Home</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav" style="padding-right: 50px">
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= site_url('checkout') ?>"><i class="fa fa-fw fa-shopping-cart"></i> Shooping Cart</a>
+                        <a class="nav-link <?= $this->uri->segment('1') == 'checkout' ? 'active' : '' ?>" href="<?= site_url('checkout') ?>"><i class="fa fa-fw fa-shopping-cart"></i> Shooping Cart</a>
                     </li>
                 </ul>
             </div>

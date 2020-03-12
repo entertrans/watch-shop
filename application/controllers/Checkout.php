@@ -20,6 +20,6 @@ class Checkout extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('checkout');
+		$this->load->view('v_checkout');
 	}
 }
