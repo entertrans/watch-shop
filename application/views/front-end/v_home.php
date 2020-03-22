@@ -8,7 +8,7 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="<?= base_url('assets/img/banner/header-bg.jpg') ?>" width="100%" height="100%">
+                <img src="<?= base_url('assets/front-end/img/banner/header-bg.jpg') ?>" width="100%" height="100%">
                 <div class="container">
                     <div class="carousel-caption text-left">
                         <h1>Example headline.</h1>
@@ -20,7 +20,7 @@
             </div>
 
             <div class="carousel-item">
-                <img src="<?= base_url('assets/img/banner/header-bg.jpg') ?>" width="100%" height="100%">
+                <img src="<?= base_url('assets/front-end/img/banner/header-bg.jpg') ?>" width="100%" height="100%">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Another example headline.</h1>
@@ -32,7 +32,7 @@
             </div>
 
             <div class="carousel-item">
-                <img src="<?= base_url('assets/img/banner/header-bg.jpg') ?>" width="100%" height="100%">
+                <img src="<?= base_url('assets/front-end/img/banner/header-bg.jpg') ?>" width="100%" height="100%">
                 <div class="container">
                     <div class="carousel-caption text-right">
                         <h1>One more for good measure.</h1>
@@ -102,7 +102,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100">
-                    <img class="card-img-top" src="<?= base_url('assets/img/product/01-thumbnail.jpg') ?>" />
+                    <img class="card-img-top" src="<?= base_url('assets/front-end/img/product/01-thumbnail.jpg') ?>" />
                     <div class="card-body">
                         <h4 class="card-title">
                             <a href="#">Item One</a>
@@ -119,7 +119,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100">
-                    <img class="card-img-top" src="<?= base_url('assets/img/product/02-thumbnail.jpg') ?>" />
+                    <img class="card-img-top" src="<?= base_url('assets/front-end/img/product/02-thumbnail.jpg') ?>" />
                     <div class="card-body">
                         <h4 class="card-title">
                             <a href="#">Item One</a>
@@ -136,7 +136,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100">
-                    <img class="card-img-top" src="<?= base_url('assets/img/product/03-thumbnail.jpg') ?>" />
+                    <img class="card-img-top" src="<?= base_url('assets/front-end/img/product/03-thumbnail.jpg') ?>" />
                     <div class="card-body">
                         <h4 class="card-title">
                             <a href="#">Item One</a>
@@ -153,7 +153,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100">
-                    <img class="card-img-top" src="<?= base_url('assets/img/product/04-thumbnail.jpg') ?>" />
+                    <img class="card-img-top" src="<?= base_url('assets/front-end/img/product/04-thumbnail.jpg') ?>" />
                     <div class="card-body">
                         <h4 class="card-title">
                             <a href="#">Item One</a>
@@ -170,7 +170,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100">
-                    <img class="card-img-top" src="<?= base_url('assets/img/product/05-thumbnail.jpg') ?>" />
+                    <img class="card-img-top" src="<?= base_url('assets/front-end/img/product/05-thumbnail.jpg') ?>" />
                     <div class="card-body">
                         <h4 class="card-title">
                             <a href="#">Item One</a>
@@ -187,7 +187,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100">
-                    <img class="card-img-top" src="<?= base_url('assets/img/product/06-thumbnail.jpg') ?>" />
+                    <img class="card-img-top" src="<?= base_url('assets/front-end/img/product/06-thumbnail.jpg') ?>" />
                     <div class="card-body">
                         <h4 class="card-title">
                             <a href="#">Item One</a>

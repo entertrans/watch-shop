@@ -24,10 +24,4 @@ class Auth extends CI_Controller {
 		$this->load->view('dashboard/login');
 		$this->load->view('layout/dashboard/footer');
 	}
-
-	public function login(){
-		$this->load->view('layout/dashboard/header');
-		$this->load->view('dashboard/index');
-		$this->load->view('layout/dashboard/footer');
-	}
 }

@@ -9,5 +9,5 @@
 
 </html>
 
-<script src="<?= base_url('assets/jquery/jquery.min.js') ?>"></script>
-<script src="<?= base_url('assets/vendor/bootstrap-4.4.1/js/bootstrap.min.js') ?>"></script>
+<script src="<?= base_url('assets/front-end/jquery/jquery.min.js') ?>"></script>
+<script src="<?= base_url('assets/front-end/vendor/bootstrap-4.4.1/js/bootstrap.min.js') ?>"></script>

@@ -19,15 +19,17 @@ class Dashboard extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	
-	public function index()
-	{
+	public function index(){
+		$this->load->view('layout/dashboard/header');
 		$this->load->view('dashboard/index');
+		$this->load->view('layout/dashboard/footer');
 	}
 
+	public function banner(){
+		$data['title'] = 'Slide Banner';
 
-	public function table(){
 		$this->load->view('layout/dashboard/header');
-		$this->load->view('dashboard/tables');
+		$this->load->view('dashboard/v_banner', $data);
 		$this->load->view('layout/dashboard/footer');
 	}
 }
