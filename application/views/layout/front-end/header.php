@@ -12,9 +12,9 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/front-end/vendor/bootstrap-4.4.1/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/front-end/vendor/bootstrap-4.4.1/css/bootstrap.min.css') ?>">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="<?= base_url('assets/front-end/fonts/font-awesome/css/font-awesome.min.css') ?>">
-    </link>
+    <link rel="stylesheet" href="<?= base_url('assets/rajaongkir/css/bootstrap.min.css') ?>">
 
     <style>
         body {

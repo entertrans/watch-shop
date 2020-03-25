@@ -1,20 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Checkout extends CI_Controller {
-
-	function __construct()
-	{
-		parent::__construct();		
-
-	}
+class Rajaongkir extends CI_Controller {
 	private $api_key = 'fbd791dbdaa5ed2f93cd83f0f68887ef';
 	public function index()
 	{
-		$this->load->view('layout/front-end/header');
-		$this->load->view('front-end/v_checkout');
-		$this->load->view('layout/front-end/footer');
+		$this->load->view('cek_ongkir');
 	}
+
 
 	function getCity($province){	
 		$curl = curl_init();
@@ -89,4 +82,4 @@ class Checkout extends CI_Controller {
 			$this->load->view('rajaongkir/getResi', $data);
 		}
 
-}
+	}
