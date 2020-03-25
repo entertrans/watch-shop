@@ -56,153 +56,231 @@
             </form>
         </div>
         <div class="col-md-8 order-md-1">
-            <h4 class="mb-3">Billing address</h4>
+            <h4 class="mb-3">Data Penerima</h4>
             <form class="needs-validation" novalidate="">
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="firstName">First name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="lastName">Last name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                        <div class="invalid-feedback">
-                            Valid last name is required.
-                        </div>
-                    </div>
-                </div>
 
                 <div class="mb-3">
-                    <label for="username">Username</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">@</span>
-                        </div>
-                        <input type="text" class="form-control" id="username" placeholder="Username" required="">
-                        <div class="invalid-feedback" style="width: 100%;">
-                            Your username is required.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-3">
-                    <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <label for="lastName">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Nama Anda" value="" required>
                     <div class="invalid-feedback">
-                        Please enter a valid email address for shipping updates.
+                        Tulis Nama Anda
                     </div>
                 </div>
 
                 <div class="mb-3">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                    <label for="lastName">No Whatsap</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Nomor Whatsap Anda" value="" required onkeypress="return checknumber()">
                     <div class="invalid-feedback">
-                        Please enter your shipping address.
+                        Tulis Nomor Whatsapp Anda
                     </div>
                 </div>
 
-                <div class="mb-3">
-                    <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-                    <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                </div>
+
 
                 <div class="row">
-                    <div class="col-md-5 mb-3">
-                        <label for="country">Country</label>
-                        <select class="custom-select d-block w-100" id="country" required="">
-                            <option value="">Choose...</option>
-                            <option>United States</option>
+                    <div class="col-md-4 mb-3">
+                        <label for="country">Pilih Provinsi</label>
+                        <select class="custom-select d-block w-100 form-control" name="propinsi_tujuan" id="propinsi_tujuan">
+                            <option value="" selected="" disabled="">Pilih Provinsi</option>
+                            <?php $this->load->view('rajaongkir/getProvince'); ?>
                         </select>
                         <div class="invalid-feedback">
-                            Please select a valid country.
+                            Pilih provinsi
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <label for="state">State</label>
-                        <select class="custom-select d-block w-100" id="state" required="">
-                            <option value="">Choose...</option>
-                            <option>California</option>
+                        <label for="state">Pilih Kota</label>
+                        <select class="custom-select d-block w-100 form-control" name="destination" id="destination">
+                            <option value="" selected="" disabled="">Pilih Kota</option>
                         </select>
                         <div class="invalid-feedback">
-                            Please provide a valid state.
+                            Pilih Kota
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="zip">Zip</label>
-                        <input type="text" class="form-control" id="zip" placeholder="" required="">
+                    <div class="col-md-4 mb-3">
+                        <label for="courier">Pilih Kurir</label>
+                        <select class="form-control" name="courier" id="courier">
+                            <option value="" disabled selected>Pilih Kurir</option>
+                            <option value="jne">JNE</option>
+                            <option value="pos">POS</option>
+                            <option value="tiki">TIKI</option>
+                        </select>
                         <div class="invalid-feedback">
-                            Zip code required.
+                            Pilih Kurir
                         </div>
                     </div>
                 </div>
-                <hr class="mb-4">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="same-address">
-                    <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="save-info">
-                    <label class="custom-control-label" for="save-info">Save this information for next time</label>
+
+                <div class="mb-3">
+                    <label for="address">Alamat Lengkap</label>
+                    <br>
+                    <textarea class="form-control" name="" cols="80" rows="3"></textarea>
+                    <!-- <input type="text" class="form-control" id="lastName" placeholder="Nomor Whatsap Anda" value="" required onkeypress="return checknumber()"> -->
+                    <div class="invalid-feedback">
+                        Tulis Alamat Lengkap Anda
+                    </div>
                 </div>
                 <hr class="mb-4">
 
-                <h4 class="mb-3">Payment</h4>
+                <h4 class="mb-3">Check Ongkir</h4>
+                
+                <!-- LOKASI -->
+                <div class="row">
+                    <div class="col-md-6" style="visibility: hidden; position: absolute;">
+                        <div class="panel panel-info">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Asal</h3>
+                        </div>
+                        <div class="panel-body">
+                            <select class="form-control" name="propinsi_asal" id="propinsi_asal">
+                                <option value="3" selected>Banten</option>
+                                <!-- <?php $this->load->view('rajaongkir/getProvince'); ?> -->
+                            </select>
+                            <br>
+                            <select class="form-control" name="origin" id="origin">
+                                <option value="457" selected>Pilih Kota</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+<!--                 <div class="col-md-6">
+                    <div class="panel panel-success">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Tujuan</h3>
+                    </div>
+                    <div class="panel-body">
+                        <select class="form-control" name="propinsi_tujuan" id="propinsi_tujuan">
+                            <option value="" selected="" disabled="">Pilih Provinsi</option>
+                            <?php $this->load->view('rajaongkir/getProvince'); ?>
+                        </select>
+                        <br>
+                        <select class="form-control" name="destination" id="destination">
+                            <option value="" selected="" disabled="">Pilih Kota</option>
+                        </select>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- END OF LOKASI -->
 
-                <div class="d-block my-3">
-                    <div class="custom-control custom-radio">
-                        <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
-                        <label class="custom-control-label" for="credit">Credit card</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                        <label class="custom-control-label" for="debit">Debit card</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                        <label class="custom-control-label" for="paypal">PayPal</label>
-                    </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-success">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Berat</h3>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="cc-name">Name on card</label>
-                        <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                        <small class="text-muted">Full name as displayed on card</small>
-                        <div class="invalid-feedback">
-                            Name on card is required
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="cc-number">Credit card number</label>
-                        <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-                        <div class="invalid-feedback">
-                            Credit card number is required
-                        </div>
-                    </div>
+                <div class="panel-body">
+                    <input type="text" name="berat" placeholder="gram" id="berat" class="form-control">
+                    <br>
+                    <!-- <select class="form-control" name="courier" id="courier">
+                        <option value="" disabled selected>Pilih Kurir</option>
+                        <option value="jne">JNE</option>
+                        <option value="pos">POS</option>
+                        <option value="tiki">TIKI</option>
+                    </select> -->
+                    <br>
+                    <button type="button" onclick="tampil_data('data')" class="btn btn-info">Cek Ongkir</button>
                 </div>
-                <div class="row">
-                    <div class="col-md-3 mb-3">
-                        <label for="cc-expiration">Expiration</label>
-                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-                        <div class="invalid-feedback">
-                            Expiration date required
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="cc-cvv">CVV</label>
-                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                        <div class="invalid-feedback">
-                            Security code required
-                        </div>
-                    </div>
+            </div>
+            <script>
+                function tampil_data(act){
+                  var w = $('#origin').val();
+                  var x = $('#destination').val();
+                  var y = $('#berat').val();
+                  var z = $('#courier').val();
+
+                  $.ajax({
+                      url: "<?= site_url('rajaongkir/getCost') ?>",
+                      type: "GET",
+                      data : {origin: w, destination: x, berat: y, courier: z},
+                      success: function (ajaxData){
+                                  //$('#tombol_export').show();
+                                  //$('#hasilReport').show();
+                                  $("#hasil").html(ajaxData);
+                              }
+                          });
+              };
+          </script>
+      </div>
+      <div class="col-md-8">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">Hasil</h3>
+        </div>
+        <div class="panel-body">
+            <ol>
+                <div id="hasil">
+
                 </div>
-                <hr class="mb-4">
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
-            </form>
+            </ol>
         </div>
     </div>
+</div>  
+</div>
+
+<!-- RESI -->
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-warning">
+          <div class="panel-heading">
+            <h3 class="panel-title">Cek Resi</h3>
+        </div>
+        <div class="panel-body">
+            <input type="text" name="no_resi" placeholder="No Resi" id="no_resi" class="form-control">
+            <br>
+            <button type="button" onclick="tampil_resi('data')" class="btn btn-info">Cek Resi</button>
+
+        </div>
+    </div>
+    <script>
+        function tampil_resi(act){
+          var resi = $('#no_resi').val();
+
+          if(resi == ""){
+            alert("harap isi data dengan lengkap");
+        }else{
+            $.ajax({
+              url: "rajaongkir/getResi",
+              type: "GET",
+              data : {waybill: resi},
+              success: function (ajaxData){
+                                  //$('#tombol_export').show();
+                                  //$('#hasilReport').show();
+                                  $("#hasil_resi").html(ajaxData);
+                              }
+                          });
+        }
+
+
+    };
+</script>
+</div>
+<div class="col-md-8">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Cek Resi</h3>
+    </div>
+    <div class="panel-body">
+        <ol>
+            <div id="hasil_resi">
+
+            </div>
+        </ol>
+    </div>
+</div>
+</div>
+</div>
+<!-- END OF RESI -->
+
+
+
+
+
+
+<button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+</form>
+</div>
+</div>
 
 </div>
 
