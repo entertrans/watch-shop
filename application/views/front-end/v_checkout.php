@@ -125,6 +125,7 @@
                 <h4 class="mb-3">Check Ongkir</h4>
                 
                 <!-- LOKASI -->
+                <!-- mw ganti disini -->
                 <div class="row">
                     <div class="col-md-6" style="visibility: hidden; position: absolute;">
                         <div class="panel panel-info">
