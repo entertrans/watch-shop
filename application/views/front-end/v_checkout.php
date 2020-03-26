@@ -284,5 +284,3 @@
 </div>
 
 </div>
-
-<?php $this->load->view('layout/front-end/footer'); ?>
