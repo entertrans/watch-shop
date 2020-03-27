@@ -22,5 +22,6 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('layout/front-end/header');
 		$this->load->view('front-end/v_home');
+		$this->load->view('layout/front-end/footer');
 	}
 }

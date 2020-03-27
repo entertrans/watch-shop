@@ -1,413 +1,864 @@
-<div class="container" style="height: 500px">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="<?= base_url('assets/front-end/img/banner/header-bg.jpg') ?>" width="100%" height="100%">
-                <div class="container">
-                    <div class="carousel-caption text-left">
-                        <h1>Example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                        metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <img src="<?= base_url('assets/front-end/img/banner/header-bg.jpg') ?>" width="100%" height="100%">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                        metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <img src="<?= base_url('assets/front-end/img/banner/header-bg.jpg') ?>" width="100%" height="100%">
-                <div class="container">
-                    <div class="carousel-caption text-right">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                        metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                    </div>
-                </div>
-            </div>
+  <!-- Start slider -->
+  <section id="aa-slider">
+    <div class="aa-slider-area">
+      <div id="sequence" class="seq">
+        <div class="seq-screen">
+          <ul class="seq-canvas">
+            <!-- single slide item -->
+            <li>
+              <div class="seq-model">
+                <img data-seq src="<?= base_url('assets/daily-shop-theme/img/slider/1.jpg') ?>" alt="Men slide img" />
+              </div>
+              <div class="seq-title">
+               <span data-seq>Save Up to 75% Off</span>                
+                <h2 data-seq>Men Collection</h2>                
+                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
+                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+              </div>
+            </li>
+            <!-- single slide item -->
+            <li>
+              <div class="seq-model">
+                <img data-seq src="<?= base_url('assets/daily-shop-theme/img/slider/2.jpg') ?>" alt="Wristwatch slide img" />
+              </div>
+              <div class="seq-title">
+                <span data-seq>Save Up to 40% Off</span>                
+                <h2 data-seq>Wristwatch Collection</h2>                
+                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
+                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+              </div>
+            </li>
+            <!-- single slide item -->
+            <li>
+              <div class="seq-model">
+                <img data-seq src="<?= base_url('assets/daily-shop-theme/img/slider/3.jpg') ?>" alt="Women Jeans slide img" />
+              </div>
+              <div class="seq-title">
+                <span data-seq>Save Up to 75% Off</span>                
+                <h2 data-seq>Jeans Collection</h2>                
+                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
+                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+              </div>
+            </li>
+            <!-- single slide item -->           
+            <li>
+              <div class="seq-model">
+                <img data-seq src="<?= base_url('assets/daily-shop-theme/img/slider/4.jpg') ?>" alt="Shoes slide img" />
+              </div>
+              <div class="seq-title">
+                <span data-seq>Save Up to 75% Off</span>                
+                <h2 data-seq>Exclusive Shoes</h2>                
+                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
+                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+              </div>
+            </li>
+            <!-- single slide item -->  
+             <li>
+              <div class="seq-model">
+                <img data-seq src="<?= base_url('assets/daily-shop-theme/img/slider/5.jpg') ?>" alt="Male Female slide img" />
+              </div>
+              <div class="seq-title">
+                <span data-seq>Save Up to 50% Off</span>                
+                <h2 data-seq>Best Collection</h2>                
+                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
+                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+              </div>
+            </li>                   
+          </ul>
         </div>
-
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <!-- slider navigation btn -->
+        <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+          <a type="button" class="seq-prev" aria-label="Previous"><span class="fa fa-angle-left"></span></a>
+          <a type="button" class="seq-next" aria-label="Next"><span class="fa fa-angle-right"></span></a>
+        </fieldset>
+      </div>
     </div>
-</div>
-
-<!-- container -->
-<div class="container">
-    <!-- Our Service -->
-    <section class="service">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center">Sevice</h1>
-                <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At expedita itaque officiis voluptatum. In
-                    libero, eaque nulla a unde ipsum eum, nostrum omnis rem doloremque beatae suscipit sint sed
-                voluptatibus.</i>
-                <br><br>
+  </section>
+  <!-- / slider -->
+  <!-- Start Promo section -->
+  <section id="aa-promo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-promo-area">
+            <div class="row">
+              <!-- promo left -->
+              <div class="col-md-5 no-padding">                
+                <div class="aa-promo-left">
+                  <div class="aa-promo-banner">                    
+                    <img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-1.jpg') ?>" alt="img">                    
+                    <div class="aa-prom-content">
+                      <span>75% Off</span>
+                      <h4><a href="#">For Women</a></h4>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- promo right -->
+              <div class="col-md-7 no-padding">
+                <div class="aa-promo-right">
+                  <div class="aa-single-promo-right">
+                    <div class="aa-promo-banner">                      
+                      <img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-3.jpg') ?>" alt="img">                      
+                      <div class="aa-prom-content">
+                        <span>Exclusive Item</span>
+                        <h4><a href="#">For Men</a></h4>                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aa-single-promo-right">
+                    <div class="aa-promo-banner">                      
+                      <img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-2.jpg') ?>" alt="img">                      
+                      <div class="aa-prom-content">
+                        <span>Sale Off</span>
+                        <h4><a href="#">On Shoes</a></h4>                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aa-single-promo-right">
+                    <div class="aa-promo-banner">                      
+                      <img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-4.jpg') ?>" alt="img">                      
+                      <div class="aa-prom-content">
+                        <span>New Arrivals</span>
+                        <h4><a href="#">For Kids</a></h4>                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aa-single-promo-right">
+                    <div class="aa-promo-banner">                      
+                      <img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-5.jpg') ?>" alt="img">                      
+                      <div class="aa-prom-content">
+                        <span>25% Off</span>
+                        <h4><a href="#">For Bags</a></h4>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div class="col-md-4 text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quo necessitatibus pariatur deleniti tempore
-                eius. Sit, itaque ad culpa, eum beatae quas enim tempore laudantium at consequatur exercitationem quibusdam
-                voluptas.
-            </div>
-            <div class="col-md-4 text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quo necessitatibus pariatur deleniti tempore
-                eius. Sit, itaque ad culpa, eum beatae quas enim tempore laudantium at consequatur exercitationem quibusdam
-                voluptas.
-            </div>
-            <div class="col-md-4 text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quo necessitatibus pariatur deleniti tempore
-                eius. Sit, itaque ad culpa, eum beatae quas enim tempore laudantium at consequatur exercitationem quibusdam
-                voluptas.
-            </div>
+          </div>
         </div>
-    </section>
-    <!-- /.row -->
-    <!-- End of Our Service -->
-
-    <hr class="featurette-divider">
-
-    <!-- Products -->
-    <section class="product">
-        <div class="row">
-            <div class="col-md-12 mb-4">
-                <h1 class="text-center">Products</h1>
-                <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At expedita itaque officiis voluptatum. In
-                    libero, eaque nulla a unde ipsum eum, nostrum omnis rem doloremque beatae suscipit sint sed
-                voluptatibus.</i>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                    <img class="card-img-top" src="<?= base_url('assets/front-end/img/product/01-thumbnail.jpg') ?>" />
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Item One</a>
-                        </h4>
-                        <h5>$24.99</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Amet numquam aspernatur!
-                        </p>
-                        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <!-- / Promo section -->
+  <!-- Products section -->
+  <section id="aa-product">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="aa-product-area">
+              <div class="aa-product-inner">
+                <!-- start prduct navigation -->
+                 <ul class="nav nav-tabs aa-products-tab">
+                    <li class="active"><a href="#men" data-toggle="tab">Men</a></li>
+                    <li><a href="#women" data-toggle="tab">Women</a></li>
+                    <li><a href="#sports" data-toggle="tab">Sports</a></li>
+                    <li><a href="#electronics" data-toggle="tab">Electronics</a></li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <!-- Start men product category -->
+                    <div class="tab-pane fade in active" id="men">
+                      <ul class="aa-product-catg">
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/man/polo-shirt-2.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                              <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                        
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>                          
+                          </div>
+                          <!-- product badge -->
+                          <span class="aa-badge aa-sale" href="#">SALE!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/man/t-shirt-1.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                             <figcaption>
+                              <h4 class="aa-product-title"><a href="#">T-Shirt</a></h4>
+                              <span class="aa-product-price">$45.50</span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                           <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/man/polo-shirt-1.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                             <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/man/polo-shirt-4.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                          
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                          <span class="aa-badge aa-hot" href="#">HOT!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/man/polo-shirt-5.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">T-Shirt</a></h4>
+                              <span class="aa-product-price">$45.50</span>
+                            </figcaption>
+                          </figure>                          
+                          <div class="aa-product-hvr-content">
+                           
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/man/polo-shirt-6.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                          
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/man/polo-shirt-2.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                          
+                          <div class="aa-product-hvr-content">
+                            
+                           <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                          <span class="aa-badge aa-sale" href="#">SALE!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/man/t-shirt-1.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">T-Shirt</a></h4>
+                              <span class="aa-product-price">$45.50</span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                           <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                        </li>                        
+                      </ul>
+                      <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
                     </div>
-                </div>
-            </div>
+                    <!-- / men product category -->
 
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                    <img class="card-img-top" src="<?= base_url('assets/front-end/img/product/02-thumbnail.jpg') ?>" />
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Item One</a>
-                        </h4>
-                        <h5>$24.99</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Amet numquam aspernatur!
-                        </p>
-                        <button class="btn btn-primary">Add to Cart</button>
+                    <!-- start women product category -->
+                    <div class="tab-pane fade" id="women">
+                      <ul class="aa-product-catg">
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/women/girl-1.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">This is Title</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>                            
+                          </div>
+                          <!-- product badge -->
+                          <span class="aa-badge aa-sale" href="#">SALE!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/women/girl-2.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                           <span class="aa-badge aa-hot" href="#">HOT!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/women/girl-3.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/women/girl-4.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                          
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                          <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/women/girl-5.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span>
+                            </figcaption>
+                          </figure>
+                         
+                          <div class="aa-product-hvr-content">
+                           
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/women/girl-6.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                          
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/women/girl-7.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                          
+                          <div class="aa-product-hvr-content">
+                            
+                           <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                          <span class="aa-badge aa-sale" href="#">SALE!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/women/girl-1.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                           <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                        </li>                        
+                      </ul>
+                      <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
                     </div>
-                </div>
-            </div>
+                    <!-- / women product category -->
 
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                    <img class="card-img-top" src="<?= base_url('assets/front-end/img/product/03-thumbnail.jpg') ?>" />
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Item One</a>
-                        </h4>
-                        <h5>$24.99</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Amet numquam aspernatur!
-                        </p>
-                        <button class="btn btn-primary">Add to Cart</button>
+                    <!-- start sports product category -->
+                    <div class="tab-pane fade" id="sports">
+                      <ul class="aa-product-catg">
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/sports/sport-1.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">This is Title</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>                          
+                          </div>
+                          <!-- product badge -->
+                          <span class="aa-badge aa-sale" href="#">SALE!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/sports/sport-2.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                           <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/sports/sport-3.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                          
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/sports/sport-4.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                          <span class="aa-badge aa-hot" href="#">HOT!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/sports/sport-5.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span>
+                            </figcaption>
+                          </figure>                          
+                          <div class="aa-product-hvr-content">
+                           
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/sports/sport-6.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/sports/sport-7.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                          
+                          <div class="aa-product-hvr-content">
+                            
+                           <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                          <span class="aa-badge aa-sale" href="#">SALE!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/sports/sport-8.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                           <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                        </li>                        
+                      </ul>
                     </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                    <img class="card-img-top" src="<?= base_url('assets/front-end/img/product/04-thumbnail.jpg') ?>" />
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Item One</a>
-                        </h4>
-                        <h5>$24.99</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Amet numquam aspernatur!
-                        </p>
-                        <button class="btn btn-primary">Add to Cart</button>
+                    <!-- / sports product category -->
+                    <!-- start electronic product category -->
+                    <div class="tab-pane fade" id="electronics">
+                       <ul class="aa-product-catg">
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/electronics/electronic-1.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">This is Title</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>                            
+                          </div>
+                          <!-- product badge -->
+                          <span class="aa-badge aa-sale" href="#">SALE!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/electronics/electronic-2.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                           <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/electronics/electronic-3.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                          
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/electronics/electronic-4.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                          
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                          <span class="aa-badge aa-hot" href="#">HOT!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/electronics/electronic-5.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                           
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/electronics/electronic-6.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                         
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/electronics/electronic-7.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                            </figcaption>
+                          </figure>                          
+                          <div class="aa-product-hvr-content">
+                            
+                           <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                          <span class="aa-badge aa-sale" href="#">SALE!</span>
+                        </li>
+                        <!-- start single product item -->
+                        <li>
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="<?= base_url('assets/daily-shop-theme/img/electronics/electronic-8.png') ?>" alt="polo shirt img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">$45.50</span>
+                            </figcaption>
+                          </figure>                          
+                          <div class="aa-product-hvr-content">
+                            
+                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                          </div>
+                          <!-- product badge -->
+                           <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+                        </li>                        
+                      </ul>
+                      <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
                     </div>
-                </div>
-            </div>
+                    <!-- / electronic product category -->
+                  </div>
+                  <!-- quick view modal -->                  
+                  <div class="modal fade" id="quick-view-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">                      
+                        <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <div class="row">
+                            <!-- Modal view slider -->
+                            <div class="col-md-6 col-sm-6 col-xs-12">                              
+                              <div class="aa-product-view-slider">                                
+                                <div class="simpleLens-gallery-container" id="demo-1">
+                                  <div class="simpleLens-container">
+                                      <div class="simpleLens-big-image-container">
+                                          <a class="simpleLens-lens-image" data-lens-image="<?= base_url('assets/daily-shop-theme/img/view-slider/large/polo-shirt-1.png') ?>">
+                                              <img src="<?= base_url('assets/daily-shop-theme/img/view-slider/medium/polo-shirt-1.png') ?>" class="simpleLens-big-image">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="simpleLens-thumbnails-container">
+                                      <a href="#" class="simpleLens-thumbnail-wrapper"
+                                         data-lens-image="<?= base_url('assets/daily-shop-theme/img/view-slider/large/polo-shirt-1.png') ?>"
+                                         data-big-image="<?= base_url('assets/daily-shop-theme/img/view-slider/medium/polo-shirt-1.png') ?>">
+                                          <img src="<?= base_url('assets/daily-shop-theme/img/view-slider/thumbnail/polo-shirt-1.png') ?>">
+                                      </a>                                    
+                                      <a href="#" class="simpleLens-thumbnail-wrapper"
+                                         data-lens-image="<?= base_url('assets/daily-shop-theme/img/view-slider/large/polo-shirt-3.png') ?>"
+                                         data-big-image="<?= base_url('assets/daily-shop-theme/img/view-slider/medium/polo-shirt-3.png') ?>">
+                                          <img src="<?= base_url('assets/daily-shop-theme/img/view-slider/thumbnail/polo-shirt-3.png') ?>">
+                                      </a>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                    <img class="card-img-top" src="<?= base_url('assets/front-end/img/product/05-thumbnail.jpg') ?>" />
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Item One</a>
-                        </h4>
-                        <h5>$24.99</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Amet numquam aspernatur!
-                        </p>
-                        <button class="btn btn-primary">Add to Cart</button>
-                    </div>
-                </div>
+                                      <a href="#" class="simpleLens-thumbnail-wrapper"
+                                         data-lens-image="<?= base_url('assets/daily-shop-theme/img/view-slider/large/polo-shirt-4.png') ?>"
+                                         data-big-image="<?= base_url('assets/daily-shop-theme/img/view-slider/medium/polo-shirt-4.png') ?>">
+                                      </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Modal view content -->
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <div class="aa-product-view-content">
+                                <h3>T-Shirt</h3>
+                                <div class="aa-price-block">
+                                  <span class="aa-product-view-price">$34.99</span>
+                                  <p class="aa-product-avilability">Avilability: <span>In stock</span></p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!</p>
+                                <h4>Size</h4>
+                                <div class="aa-prod-view-size">
+                                  <a href="#">S</a>
+                                  <a href="#">M</a>
+                                  <a href="#">L</a>
+                                  <a href="#">XL</a>
+                                </div>
+                                <div class="aa-prod-quantity">
+                                  <form action="">
+                                    <select name="" id="">
+                                      <option value="0" selected="1">1</option>
+                                      <option value="1">2</option>
+                                      <option value="2">3</option>
+                                      <option value="3">4</option>
+                                      <option value="4">5</option>
+                                      <option value="5">6</option>
+                                    </select>
+                                  </form>
+                                  <p class="aa-prod-category">
+                                    Category: <a href="#">Polo T-Shirt</a>
+                                  </p>
+                                </div>
+                                <div class="aa-prod-view-bottom">
+                                  <a href="#" class="aa-add-to-cart-btn"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>                        
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- / quick view modal -->              
+              </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                    <img class="card-img-top" src="<?= base_url('assets/front-end/img/product/06-thumbnail.jpg') ?>" />
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Item One</a>
-                        </h4>
-                        <h5>$24.99</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Amet numquam aspernatur!
-                        </p>
-                        <button class="btn btn-primary">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12 text-center">
-                <button class="btn btn-primary">View More</button>
-            </div>
+          </div>
         </div>
-    </section>
-    <!-- /.row -->
-    <!-- End of Products -->
+      </div>
+    </div>
+  </section>
+  <!-- / Products section -->
 
-    <hr class="featurette-divider">
 
-    <!-- Testimonial -->
-    <section class="testimonial">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center">Testimonial</h1>
-                <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At expedita itaque officiis voluptatum. In
-                    libero, eaque nulla a unde ipsum eum, nostrum omnis rem doloremque beatae suscipit sint sed
-                voluptatibus.</i>
-                <br><br>
-            </div>
+
+    <!-- Client Brand -->
+    <div style="height: 200px">
+  <section id="aa-client-brand" style="padding-top: 10px">
+     <h2 style="text-align: center;">Testimoni</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-client-brand-area">
+            <ul class="aa-client-brand-slider">
+              <li>        
+                    <a href="#" style="padding-top: 5px; padding-bottom: 5px;"><img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-1.jpg') ?>" alt="jquery img"></a>                 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+              </li>
+              <li>        
+                    <a href="#" style="padding-top: 5px; padding-bottom: 5px;"><img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-1.jpg') ?>" alt="jquery img"></a>                 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+              </li>
+              <li>        
+                    <a href="#" style="padding-top: 5px; padding-bottom: 5px;"><img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-1.jpg') ?>" alt="jquery img"></a>                 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+              </li>
+              <li>        
+                    <a href="#" style="padding-top: 5px; padding-bottom: 5px;"><img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-1.jpg') ?>" alt="jquery img"></a>                 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+              </li>
+              <li>        
+                    <a href="#" style="padding-top: 5px; padding-bottom: 5px;"><img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-1.jpg') ?>" alt="jquery img"></a>                 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+              </li>
+              <li>        
+                    <a href="#" style="padding-top: 5px; padding-bottom: 5px;"><img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-1.jpg') ?>" alt="jquery img"></a>                 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+              </li>
+              <li>        
+                    <a href="#" style="padding-top: 5px; padding-bottom: 5px;"><img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-1.jpg') ?>" alt="jquery img"></a>                 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+              </li>
+              <li>        
+                    <a href="#" style="padding-top: 5px; padding-bottom: 5px;"><img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-1.jpg') ?>" alt="jquery img"></a>                 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+              </li>
+              <li>        
+                    <a href="#" style="padding-top: 5px; padding-bottom: 5px;"><img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-1.jpg') ?>" alt="jquery img"></a>                 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+              </li>
+              <li>        
+                    <a href="#" style="padding-top: 5px; padding-bottom: 5px;"><img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-1.jpg') ?>" alt="jquery img"></a>                 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+              </li>
+              <li>        
+                    <a href="#" style="padding-top: 5px; padding-bottom: 5px;"><img src="<?= base_url('assets/daily-shop-theme/img/promo-banner-1.jpg') ?>" alt="jquery img"></a>                 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row text-center">
-                        <!--Grid column-->
-                        <div class="col-md-4 mb-md-0 mb-5">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto">
-                                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
-                                </div>
-                                <!--Content-->
-                                <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
-                                <h6 class="font-weight-bold blue-text my-3">Web Designer</h6>
-                                <p class="font-weight-normal dark-grey-text">
-                                    <i class="fa fa-fw fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                                eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-md-4 mb-md-0 mb-5">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto">
-                                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1 img-fluid">
-                                </div>
-                                <!--Content-->
-                                <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
-                                <h6 class="font-weight-bold blue-text my-3">Web Developer</h6>
-                                <p class="font-weight-normal dark-grey-text">
-                                    <i class="fa fa-fw fa-quote-left pr-2"></i>Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                                corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-md-4">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto">
-                                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
-                                </div>
-                                <!--Content-->
-                                <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>
-                                <h6 class="font-weight-bold blue-text my-3">Photographer</h6>
-                                <p class="font-weight-normal dark-grey-text">
-                                    <i class="fa fa-fw fa-quote-left pr-2"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis praesentium voluptatum deleniti atque corrupti.</p>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="row text-center">
-                        <!--Grid column-->
-                        <div class="col-md-4 mb-md-0 mb-5">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto">
-                                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
-                                </div>
-                                <!--Content-->
-                                <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
-                                <h6 class="font-weight-bold blue-text my-3">Web Designer</h6>
-                                <p class="font-weight-normal dark-grey-text">
-                                    <i class="fa fa-fw fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                                eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-md-4 mb-md-0 mb-5">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto">
-                                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1 img-fluid">
-                                </div>
-                                <!--Content-->
-                                <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
-                                <h6 class="font-weight-bold blue-text my-3">Web Developer</h6>
-                                <p class="font-weight-normal dark-grey-text">
-                                    <i class="fa fa-fw fa-quote-left pr-2"></i>Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                                corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-md-4">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto">
-                                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
-                                </div>
-                                <!--Content-->
-                                <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>
-                                <h6 class="font-weight-bold blue-text my-3">Photographer</h6>
-                                <p class="font-weight-normal dark-grey-text">
-                                    <i class="fa fa-fw fa-quote-left pr-2"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis praesentium voluptatum deleniti atque corrupti.</p>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="row text-center">
-                        <!--Grid column-->
-                        <div class="col-md-4 mb-md-0 mb-5">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto">
-                                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
-                                </div>
-                                <!--Content-->
-                                <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
-                                <h6 class="font-weight-bold blue-text my-3">Web Designer</h6>
-                                <p class="font-weight-normal dark-grey-text">
-                                    <i class="fa fa-fw fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                                eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-md-4 mb-md-0 mb-5">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto">
-                                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1 img-fluid">
-                                </div>
-                                <!--Content-->
-                                <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
-                                <h6 class="font-weight-bold blue-text my-3">Web Developer</h6>
-                                <p class="font-weight-normal dark-grey-text">
-                                    <i class="fa fa-fw fa-quote-left pr-2"></i>Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                                corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-md-4">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto">
-                                    <img width="50%" height="50%" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
-                                </div>
-                                <!--Content-->
-                                <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>
-                                <h6 class="font-weight-bold blue-text my-3">Photographer</h6>
-                                <p class="font-weight-normal dark-grey-text">
-                                    <i class="fa fa-fw fa-quote-left pr-2"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis praesentium voluptatum deleniti atque corrupti.</p>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-                    </div>
-                </div>
-            </div>
-            <!-- carousel-inner -->
-
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <i style="color: black" class="fa fa-fw fa-chevron-left"></i>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <i style="color: black" class="fa fa-fw fa-chevron-right"></i>
-            </a>
-        </div>
-    </section>
-    <!-- End of Testimonial -->
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-</div>
-<!-- /.container -->
-
-<?php $this->load->view('layout/front-end/footer'); ?>
+      </div>
+    </div>
+  </section>
+  </div>
+  <!-- / Client Brand -->
