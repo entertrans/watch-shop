@@ -56,3 +56,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['dashboard'] = 'dashboard/auth';
 $route['dashboard/index'] = 'dashboard/dashboard';
 $route['dashboard/banner'] = 'dashboard/dashboard/banner';
+
+$route['dashboard/product'] = 'dashboard/produk';
