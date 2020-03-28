@@ -68,32 +68,60 @@
 </html>
 
 <!-- <script src="<?= base_url('assets/front-end/jquery/jquery.min.js') ?>"></script>
-<script src="<?= base_url('assets/front-end/vendor/bootstrap-4.4.1/js/bootstrap.min.js') ?>"></script> -->
+	<script src="<?= base_url('assets/front-end/vendor/bootstrap-4.4.1/js/bootstrap.min.js') ?>"></script> -->
 
- <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="<?= base_url('assets/daily-shop-theme/js/bootstrap.js') ?>"></script>  
-  <!-- SmartMenus jQuery plugin -->
-  <script type="text/javascript" src="<?= base_url('assets/daily-shop-theme/js/jquery.smartmenus.js') ?>"></script>
-  <!-- SmartMenus jQuery Bootstrap Addon -->
-  <script type="text/javascript" src="<?= base_url('assets/daily-shop-theme/js/jquery.smartmenus.bootstrap.js') ?>"></script>  
-  <!-- To Slider JS -->
-  <script src="<?= base_url('assets/daily-shop-theme/js/sequence.js') ?>"></script>
-  <script src="<?= base_url('assets/daily-shop-theme/js/sequence-theme.modern-slide-in.js') ?>"></script>  
-  <!-- Product view slider -->
-  <script type="text/javascript" src="<?= base_url('assets/daily-shop-theme/js/jquery.simpleGallery.js') ?>"></script>
-  <script type="text/javascript" src="<?= base_url('assets/daily-shop-theme/js/jquery.simpleLens.js') ?>"></script>
-  <!-- slick slider -->
-  <script type="text/javascript" src="<?= base_url('assets/daily-shop-theme/js/slick.js') ?>"></script>
-  <!-- Price picker slider -->
-  <script type="text/javascript" src="<?= base_url('assets/daily-shop-theme/js/nouislider.js') ?>"></script>
-  <!-- Custom js -->
-  <script src="<?= base_url('assets/daily-shop-theme/js/custom.js') ?>"></script> 
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="<?= base_url('assets/daily-shop-theme/js/bootstrap.js') ?>"></script>  
+	<!-- SmartMenus jQuery plugin -->
+	<script type="text/javascript" src="<?= base_url('assets/daily-shop-theme/js/jquery.smartmenus.js') ?>"></script>
+	<!-- SmartMenus jQuery Bootstrap Addon -->
+	<script type="text/javascript" src="<?= base_url('assets/daily-shop-theme/js/jquery.smartmenus.bootstrap.js') ?>"></script>  
+	<!-- To Slider JS -->
+	<script src="<?= base_url('assets/daily-shop-theme/js/sequence.js') ?>"></script>
+	<script src="<?= base_url('assets/daily-shop-theme/js/sequence-theme.modern-slide-in.js') ?>"></script>  
+	<!-- Product view slider -->
+	<script type="text/javascript" src="<?= base_url('assets/daily-shop-theme/js/jquery.simpleGallery.js') ?>"></script>
+	<script type="text/javascript" src="<?= base_url('assets/daily-shop-theme/js/jquery.simpleLens.js') ?>"></script>
+	<!-- slick slider -->
+	<script type="text/javascript" src="<?= base_url('assets/daily-shop-theme/js/slick.js') ?>"></script>
+	<!-- Price picker slider -->
+	<script type="text/javascript" src="<?= base_url('assets/daily-shop-theme/js/nouislider.js') ?>"></script>
+	<!-- Custom js -->
+	<script src="<?= base_url('assets/daily-shop-theme/js/custom.js') ?>"></script> 
 
-  <script>
-  	
-  	function scrolto() {
-  		$("html, body").animate({ scrollTop: $("#aa-product").offset().top }, 500);
-  	}
-  </script>
+	<script>
+		
+		function scrolto() {
+			$("html, body").animate({ scrollTop: $("#aa-product").offset().top }, 500);
+		}
+	</script>
+	
+	<script>
+		$(document).ready(function(){
+
+			$("#propinsi_asal").click(function(){
+				$.post("<?php echo base_url(); ?>index.php/rajaongkir/getCity/"+$('#propinsi_asal').val(),function(obj){
+					$('#origin').html(obj);
+				});
+				
+			});
+
+			$("#propinsi_tujuan").click(function(){
+				$.post("<?php echo base_url(); ?>index.php/rajaongkir/getCity/"+$('#propinsi_tujuan').val(),function(obj){
+					$('#destination').html(obj);
+				});
+				
+			});
+
+	/*
+	$("#cari").click(function(){
+		$.post("<?php echo base_url(); ?>index.php/rajaongkir/getCost/"+$('#origin').val()+'&dest='+$('#destination').val()+'&berat='+$('#berat').val()+'&courier='+$('#courier').val(),function(obj){
+			$('#hasil').html(obj);
+		});
+	});
+
+	*/	
+});
+</script>

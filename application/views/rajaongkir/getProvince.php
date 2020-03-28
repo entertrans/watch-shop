@@ -27,11 +27,7 @@ if ($err) {
   
   $data = json_decode($response, true);
   //echo json_encode($k['rajaongkir']['results']);
-
-  
   for ($i=0; $i < count($data['rajaongkir']['results']); $i++){
-  
-
     echo "<option value='".$data['rajaongkir']['results'][$i]['province_id']."'>".$data['rajaongkir']['results'][$i]['province']."</option>";
   
   }
