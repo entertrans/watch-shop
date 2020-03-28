@@ -90,3 +90,10 @@
   <script type="text/javascript" src="<?= base_url('assets/daily-shop-theme/js/nouislider.js') ?>"></script>
   <!-- Custom js -->
   <script src="<?= base_url('assets/daily-shop-theme/js/custom.js') ?>"></script> 
+
+  <script>
+  	
+  	function scrolto() {
+  		$("html, body").animate({ scrollTop: $("#aa-product").offset().top }, 500);
+  	}
+  </script>
