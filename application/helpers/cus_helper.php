@@ -1,4 +1,11 @@
-<?php 
+<?php defined('BASEPATH') or exit('No direct script access allowed');
+
+function rupiah($angka)
+{
+    $hasil_rupiah = number_format($angka, 0, ',', '.');
+    return $hasil_rupiah;
+}
+
 function post($var)
 {
     $ci = get_instance();

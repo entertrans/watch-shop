@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends CI_Controller {
-
+	
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,6 +20,16 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
+
+		// $array = array('detail_produk_1.jpg','detail_produk_2.jpg','detail_produk_3.jpg');
+		// $test = serialize($array);
+		// $test2= unserialize($test);
+		// echo "$test";
+		// var_dump($test2);
+		// exit();
+		$this->load->helper('rupiah_helper');
+		// echo rupiah('20000');
+		// exit();
 		$this->load->view('layout/front-end/header');
 		$this->load->view('front-end/v_home');
 		$this->load->view('layout/front-end/footer');
