@@ -84,8 +84,8 @@
               <div class="aa-header-top-left">
                 <!-- start cellphone -->
                 <div class="cellphone hidden-xs">
-                  <?php $header = $this->db->get('tbl_header')->row_array(); 
-                  $nm_toko = explode(" ",$header['nama_toko']);
+                  <?php $header = $this->db->get('tbl_header')->row_array();
+                  $nm_toko = explode(" ", $header['nama_toko']);
                   // var_dump(explode(" ",$header['nama_toko']));
 
                   ?>
@@ -99,7 +99,6 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
     <div class="aa-header-bottom">
       <div class="container">
         <div class="row">
@@ -108,29 +107,13 @@
               <!-- logo  -->
               <div class="aa-logo">
                 <!-- Text based logo -->
+                <!-- base_url().'assets/daily-shop-theme/img/' -->
                 <a href="<?= site_url('home') ?>">
-                  <span class="fa fa-shopping-cart"></span>
-                  <p>daily<strong>Shop</strong> <span>Your Shopping Partner</span></p>
+                  <span><img width="50px" src="<?= base_url() . 'assets/daily-shop-theme/img/' . $header['logo_toko']; ?>"></span>
+                  <p><?= $nm_toko[0] . " "  ?><strong><?= $nm_toko[1]  ?></strong> <span><?= $header['slogan'];  ?></span></p>
                 </a>
                 <!-- img based logo -->
                 <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
-=======
-        <div class="aa-header-bottom">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="aa-header-bottom-area">
-                  <!-- logo  -->
-                  <div class="aa-logo">
-                    <!-- Text based logo -->
-                    <!-- base_url().'assets/daily-shop-theme/img/' -->
-                    <a href="<?= site_url('home') ?>">
-                      <span><img width="50px" src="<?= base_url().'assets/daily-shop-theme/img/'.$header['logo_toko']; ?>"></span>
-                      <p><?= $nm_toko[0]." "  ?><strong><?= $nm_toko[1]  ?></strong> <span><?= $header['slogan'];  ?></span></p>
-                  </a>
-                  <!-- img based logo -->
-                  <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
->>>>>>> 5db3730afb76c6bd402e6f227f598ae34ff334d8
               </div>
               <!-- / logo  -->
               <!-- cart box -->
@@ -169,39 +152,27 @@
                   </ul>
                   <a class="aa-cartbox-checkout aa-primary-btn" href="<?= site_url('checkout') ?>">Checkout</a>
                 </div>
-<<<<<<< HEAD
-              </div>
-              <!-- / cart box -->
-              <!-- search box -->
-              <!-- <div class="aa-search-box">
-                <form action="">
-                  <input type="text" name="" id="" placeholder="Search here ex. 'man' ">
-                  <button type="submit"><span class="fa fa-search"></span></button>
-                </form>
-              </div> -->
-              <!-- / search box -->
-=======
                 <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
-            </li>                    
-            <li>
-              <span class="aa-cartbox-total-title">
-                Total
-            </span>
-            <span class="aa-cartbox-total-price">
-                $500
-            </span>
-        </li>
-    </ul>
-    <a class="aa-cartbox-checkout aa-primary-btn" href="<?= site_url('checkout') ?>">Checkout</a>
-</div>
-</div>
-<!-- / cart box -->           
-</div>
-</div>
-</div>
-</div>
-</div>
-        <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                </li>
+                <li>
+                  <span class="aa-cartbox-total-title">
+                    Total
+                  </span>
+                  <span class="aa-cartbox-total-price">
+                    $500
+                  </span>
+                </li>
+                </ul>
+                <a class="aa-cartbox-checkout aa-primary-btn" href="<?= site_url('checkout') ?>">Checkout</a>
+              </div>
+            </div>
+            <!-- / cart box -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <a class="navbar-brand" href="<?= site_url('home') ?>">Whatch'out</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -217,13 +188,12 @@
                         <a class="nav-link <?= $this->uri->segment('1') == 'checkout' ? 'active' : '' ?>" href="<?= site_url('checkout') ?>"><i class="fa fa-fw fa-shopping-cart"></i> Shooping Cart</a>
                     </li>
                 </ul>
->>>>>>> 5db3730afb76c6bd402e6f227f598ae34ff334d8
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="<?= site_url('home') ?>">Whatch'out</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

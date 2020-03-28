@@ -163,7 +163,6 @@
           });
 
           $('#form_product').on('submit', function(e) {
-              console.log($('#form_product').serialize());
               e.preventDefault();
               $.ajax({
                   url: "<?= site_url('dashboard/produk/add_produk') ?>",
@@ -173,8 +172,8 @@
                   contentType: false,
                   cache: false,
                   async: false,
-                  success: function(data) {
-                      swal(data.status);
+                  success: function(respon) {
+                      swal("Sukses", respon, "success");
                   }
               });
           });
