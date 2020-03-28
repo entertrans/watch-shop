@@ -27,9 +27,7 @@ class Home extends CI_Controller {
 		// echo "$test";
 		// var_dump($test2);
 		// exit();
-		$this->load->helper('rupiah_helper');
-		// echo rupiah('20000');
-		// exit();
+
 		$this->load->view('layout/front-end/header');
 		$this->load->view('front-end/v_home');
 		$this->load->view('layout/front-end/footer');

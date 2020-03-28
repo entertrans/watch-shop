@@ -52,10 +52,10 @@ class Produk extends CI_Controller
                 );
 
                 $this->db->insert('tbl_produk', $data);
-                echo json_encode(['status' => 'Data produk berhasil disimpan']);
+                echo json_encode('Data produk berhasil disimpan');
                 exit();
             } else {
-                echo json_encode(['status' => $this->upload->display_errors()]);
+                echo json_encode(strip_tags($this->upload->display_errors()));
                 exit();
             }
         }
