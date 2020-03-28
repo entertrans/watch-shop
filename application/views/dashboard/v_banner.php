@@ -110,4 +110,10 @@
       </div>
       <!-- End of Main Content -->
 
-      <?php $this->load->view('dashboard/footer'); ?>
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <?php $this->load->view('dashboard/footer'); ?>
