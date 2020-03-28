@@ -88,7 +88,12 @@
               <div class="aa-header-top-left">
                 <!-- start cellphone -->
                 <div class="cellphone hidden-xs">
-                  <p><span class="fa fa-whatsapp"></span>00-62-658-658</p>
+                  <?php $header = $this->db->get('tbl_header')->row_array(); 
+                  $nm_toko = explode(" ",$header['nama_toko']);
+                  // var_dump(explode(" ",$header['nama_toko']));
+
+                  ?>
+                  <p><span class="fa fa-whatsapp"></span><?= $header['no_wa'];  ?></p>
                 </div>
                 <!-- / cellphone -->
               </div>
@@ -106,9 +111,10 @@
                   <!-- logo  -->
                   <div class="aa-logo">
                     <!-- Text based logo -->
+                    <!-- base_url().'assets/daily-shop-theme/img/' -->
                     <a href="<?= site_url('home') ?>">
-                      <span class="fa fa-shopping-cart"></span>
-                      <p>daily<strong>Shop</strong> <span>Your Shopping Partner</span></p>
+                      <span><img width="50px" src="<?= base_url().'assets/daily-shop-theme/img/'.$header['logo_toko']; ?>"></span>
+                      <p><?= $nm_toko[0]." "  ?><strong><?= $nm_toko[1]  ?></strong> <span><?= $header['slogan'];  ?></span></p>
                   </a>
                   <!-- img based logo -->
                   <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
@@ -151,15 +157,7 @@
     <a class="aa-cartbox-checkout aa-primary-btn" href="<?= site_url('checkout') ?>">Checkout</a>
 </div>
 </div>
-<!-- / cart box -->
-<!-- search box -->
-<div class="aa-search-box">
-                <form action="">
-                  <input type="text" name="" id="" placeholder="Search here ex. 'man' ">
-                  <button type="submit"><span class="fa fa-search"></span></button>
-                </form>
-              </div>
-<!-- / search box -->             
+<!-- / cart box -->           
 </div>
 </div>
 </div>
